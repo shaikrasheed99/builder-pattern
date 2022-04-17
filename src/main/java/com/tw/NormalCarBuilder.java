@@ -2,40 +2,44 @@ package com.tw;
 
 public class NormalCarBuilder implements ICarBuilder {
     private String engine;
+    private String body;
+    private String doors;
 
     @Override
-    public ICarBuilder withEngine(String engineType) {
+    public NormalCarBuilder withEngine(String engineType) {
         this.engine = engineType;
         return this;
     }
 
     @Override
-    public ICarBuilder withBody(String boxy) {
+    public NormalCarBuilder withBody(String bodyType) {
+        this.body = bodyType;
+        return this;
+    }
+
+    @Override
+    public NormalCarBuilder withDoors(String doors) {
+        this.doors = doors;
+        return this;
+    }
+
+    @Override
+    public NormalCarBuilder withWindows() {
         return null;
     }
 
     @Override
-    public ICarBuilder withDoors() {
+    public NormalCarBuilder withLights() {
         return null;
     }
 
     @Override
-    public ICarBuilder withWindows() {
-        return null;
-    }
-
-    @Override
-    public ICarBuilder withLights() {
-        return null;
-    }
-
-    @Override
-    public ICarBuilder withRunsBy() {
+    public NormalCarBuilder withRunsBy() {
         return null;
     }
 
     @Override
     public NormalCar build() {
-        return new NormalCar(engine);
+        return new NormalCar(engine, body, doors);
     }
 }

@@ -5,7 +5,7 @@ public interface ICarBuilder {
 
     ICarBuilder withBody(String bodyType);
 
-    ICarBuilder withDoors();
+    ICarBuilder withDoors(String doors);
 
     ICarBuilder withWindows();
 
