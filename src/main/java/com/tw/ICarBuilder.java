@@ -7,11 +7,11 @@ public interface ICarBuilder {
 
     ICarBuilder withDoors(String doors);
 
-    ICarBuilder withWindows();
+    ICarBuilder withWindows(String windowsType);
 
-    ICarBuilder withLights();
+    ICarBuilder withLights(String lightsType);
 
-    ICarBuilder withRunsBy();
+    ICarBuilder withRunsBy(String runsWith);
 
     Car build();
 }

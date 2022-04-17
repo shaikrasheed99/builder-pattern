@@ -4,6 +4,9 @@ public class NormalCarBuilder implements ICarBuilder {
     private String engine;
     private String body;
     private String doors;
+    private String windows;
+    private String lights;
+    private String runsBy;
 
     @Override
     public NormalCarBuilder withEngine(String engineType) {
@@ -24,22 +27,25 @@ public class NormalCarBuilder implements ICarBuilder {
     }
 
     @Override
-    public NormalCarBuilder withWindows() {
-        return null;
+    public NormalCarBuilder withWindows(String windowsType) {
+        this.windows = windowsType;
+        return this;
     }
 
     @Override
-    public NormalCarBuilder withLights() {
-        return null;
+    public NormalCarBuilder withLights(String lightsType) {
+        this.lights = lightsType;
+        return this;
     }
 
     @Override
-    public NormalCarBuilder withRunsBy() {
-        return null;
+    public NormalCarBuilder withRunsBy(String runsWith) {
+        this.runsBy = runsWith;
+        return this;
     }
 
     @Override
     public NormalCar build() {
-        return new NormalCar(engine, body, doors);
+        return new NormalCar(engine, body, doors, windows, lights, runsBy);
     }
 }
