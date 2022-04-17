@@ -11,4 +11,16 @@ public class ElectricCarTest {
 
         assertEquals("bldc", tesla.getEngine());
     }
+
+    @Test
+    void shouldAbleToCreateElectricCarWithAllTheParts() {
+        ElectricCar apple = new ElectricCarBuilder().withEngine("bldc").withBody("metal").withDoors("two").withWindows("glass").withLights("halogen").withRunsBy("battery").build();
+
+        assertEquals("bldc", apple.getEngine());
+        assertEquals("metal", apple.getBody());
+        assertEquals("two", apple.getDoors());
+        assertEquals("glass", apple.getWindows());
+        assertEquals("halogen", apple.getLights());
+        assertEquals("battery", apple.getRunsBy());
+    }
 }
