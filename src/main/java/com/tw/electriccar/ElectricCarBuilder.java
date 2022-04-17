@@ -1,4 +1,6 @@
-package com.tw;
+package com.tw.electriccar;
+
+import com.tw.ICarBuilder;
 
 public class ElectricCarBuilder implements ICarBuilder {
     private String engine;

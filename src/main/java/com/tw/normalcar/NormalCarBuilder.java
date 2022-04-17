@@ -1,4 +1,6 @@
-package com.tw;
+package com.tw.normalcar;
+
+import com.tw.ICarBuilder;
 
 public class NormalCarBuilder implements ICarBuilder {
     private String engine;

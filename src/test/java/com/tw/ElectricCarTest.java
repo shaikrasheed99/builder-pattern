@@ -1,5 +1,7 @@
 package com.tw;
 
+import com.tw.electriccar.ElectricCar;
+import com.tw.electriccar.ElectricCarBuilder;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

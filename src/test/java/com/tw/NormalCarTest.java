@@ -1,5 +1,7 @@
 package com.tw;
 
+import com.tw.normalcar.NormalCar;
+import com.tw.normalcar.NormalCarBuilder;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
