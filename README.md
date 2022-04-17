@@ -3,11 +3,11 @@
 ## Example (Car):
 
 * There are two different types of cars.
-* Normal car and Electric car should be created with the builders.
+* Normal cars and Electric cars should be created with the builders.
 * Electric car builder would create electric car from it.
 * Normal car builder would create normal car.
-* Since, state of the car is so long and client cannot remember everything and their order.
-* So client uses these builders to a car from parameters which he remembers.
+* Since, the state of the car is so long and client cannot remember everything and their order.
+* So the client uses these builders to a car from parameters which he remembers.
 
 <br/>
 
